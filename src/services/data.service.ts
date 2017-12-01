@@ -49,4 +49,8 @@ export class DataService {
 		Object.assign({}, (items[items.findIndex(el => el.users.id === newItem.users.id)] = newItem));
 		return items;
 	}
+
+	removeItemFromAPI(endpoint: string, itemId: string) {
+		return this.http.delete(`${this.ROOT_URL}/${endpoint}/${itemId}`);
+	}
 }
