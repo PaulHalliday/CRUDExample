@@ -19,3 +19,11 @@ To run the project, run:
 ```
 $ ionic serve
 ```
+
+## Building the project
+
+To build the project for production, run:
+
+```
+$ ionic build <platform-name> --prod
+```
