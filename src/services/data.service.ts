@@ -32,7 +32,8 @@ export class DataService {
 			}),
 			map(items => {
 				const arr = [];
-				for (var i = 0; i < 10; i++) {
+				const MAX_LENGTH = 10;
+				for (var i = 0; i < MAX_LENGTH; i++) {
 					arr.push({ albums: items.albums[i], posts: items.posts[i], users: items.users[i] });
 				}
 				return arr;
